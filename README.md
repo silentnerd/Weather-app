@@ -4,12 +4,12 @@ A simple Weather App (ReactNative, Redux, Redux-thunk, Jest) with Public API
 
 ## Features of application
 
-•	Search Cities /n
+•	Search Cities </br>
 •	Add cities </br>
-•	Remove cities
-•	View cities weather
-•	Swipe able feature through saved cities
-•	Current location button to show weather according to longitude and latitude.
+•	Remove cities </br>
+•	View cities weather </br>
+•	Swipe able feature through saved cities </br>
+•	Current location button to show weather according to longitude and latitude. 
 
 
 ## Getting Started
