@@ -4,8 +4,8 @@ A simple Weather App (ReactNative, Redux, Redux-thunk, Jest) with Public API
 
 ## Features of application
 
-•	Search Cities
-•	Add cities
+•	Search Cities /n
+•	Add cities </br>
 •	Remove cities
 •	View cities weather
 •	Swipe able feature through saved cities
