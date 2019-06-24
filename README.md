@@ -1,6 +1,6 @@
 # Weather App 🌅
 
-A simple Weather App (ReactNative, Redux) with Public API
+A simple Weather App (ReactNative, Redux, Redux-thunk, Jest) with Public API
 
 ## Getting Started
 
@@ -16,7 +16,7 @@ npm install
 
 #### 2. Open CMD and type this command
 
-Run this command to start the development server and to start your app on iOS simulator:
+Run this command to start the development server and to start your app on Android simulator:
 Run on Android:
 ```
 react-native run:android
