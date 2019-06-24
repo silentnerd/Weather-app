@@ -4,7 +4,7 @@ import {
   ActivityIndicator,
   Alert,
   Text,
-  Button
+  TouchableOpacity
 } from 'react-native';
 import styles from './Welcome.style.js';
 import { theme } from '../../constants';
@@ -29,7 +29,7 @@ class Welcome extends Component {
         )
           .then(response => response.json())
           .then(responseJson => {
-            this.props.navigation.navigate('DetailsScreen', {
+            this.props.navigation.navigate('Weather', {
               wid: responseJson[0].woeid
             });
           });
@@ -60,20 +60,19 @@ class Welcome extends Component {
           </Text>
         </View>
         <View style={styles.viewStyle}>
-
-
-
-          <Button
-            width="20"
-            title="Search"
-            onPress={() => {
+          <View style={styles.inputsContainer}>
+            <TouchableOpacity onPress={() => {
               this.props.navigation.navigate('SearchCities');
-            }}
-          />
-          <Button
-            title="Current location"
-            onPress={() => this.findCoordinates()}
-          />
+            }} style={styles.fullWidthButton} >
+              <Text style={styles.fullWidthButtonText}>Search</Text>
+            </TouchableOpacity>
+          </View>
+
+          <View style={styles.inputsContainer}>
+            <TouchableOpacity onPress={() => this.findCoordinates()} style={styles.fullWidthButton} >
+              <Text style={styles.fullWidthButtonText}>Current Location</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
 
